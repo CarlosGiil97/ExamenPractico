@@ -1,11 +1,13 @@
 <html>
 <head>
-<title>Examen Practico Servicios</title>
+   <title>Examen practico servicios</title>
 
-<link rel="stylesheet" href="https://npmcdn.com/leaflet@0.7.7/dist/leaflet.css" />
-<script src="https://npmcdn.com/leaflet@0.7.7/dist/leaflet.js"></script>
-<script>
-var map;
+   <link rel="stylesheet" href="https://npmcdn.com/leaflet@0.7.7/dist/leaflet.css" />
+  <script src="https://npmcdn.com/leaflet@0.7.7/dist/leaflet.js"></script>
+<link href="estilo.css"
+      rel="stylesheet" type="text/css">   
+   <script language="javascript">
+      var map;
 
       function init() {
          map = new L.Map('map');
@@ -13,20 +15,21 @@ var map;
             attribution: '&copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors',
             maxZoom: 18
          }).addTo(map);
-         map.attributionControl.setPrefix(''); // Don't show the 'Powered by Leaflet' text.
+         map.attributionControl.setPrefix(''); 
 
-         // map view before we get the location
-         map.setView(new L.LatLng(51.505, -0.09), 13);
+         // Esto es una vista del mapa antes de buscar localizacion,voy a poner por defecto Granada
+         map.setView(new L.LatLng(37.177336, -3.598557), 13);
       }
+
       function onLocationFound(e) {
-      var radius = e.accuracy / 2;
-      var location = e.latlng
-      L.marker(location).addTo(map)
-      L.circle(location, radius).addTo(map);
+         var radius = e.accuracy / 2;
+         var location = e.latlng
+         L.marker(location).addTo(map)
+         L.circle(location, radius).addTo(map);
       }
 
       function onLocationError(e) {
-      alert(e.message);
+         alert(e.message);
       }
 
       function getLocationLeaflet() {
@@ -35,12 +38,13 @@ var map;
 
          map.locate({setView: true, maxZoom: 16});
       }
-</script>
-</head>
+   </script>
 
-<body onload="init()"></script>
-	
-	<div id="map"></div>
-	<input type="button" value="Localizame" onClick="getLocationLeaflet()">
+</head>
+<body onLoad="javascript:init();">
+   <div align="center" id="map"></div>
+   <input type="button" value="Te localizo" onClick="javascript:getLocationLeaflet();">
+   
 </body>
 </html>
+    
