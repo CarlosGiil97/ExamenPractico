@@ -18,6 +18,12 @@ var map;
          // map view before we get the location
          map.setView(new L.LatLng(51.505, -0.09), 13);
       }
+      function onLocationFound(e) {
+      var radius = e.accuracy / 2;
+      var location = e.latlng
+      L.marker(location).addTo(map)
+      L.circle(location, radius).addTo(map);
+      }
 
 </script>
 </head>
