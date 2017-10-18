@@ -4,6 +4,7 @@
 
    <link rel="stylesheet" href="https://npmcdn.com/leaflet@0.7.7/dist/leaflet.css" />
   <script src="https://npmcdn.com/leaflet@0.7.7/dist/leaflet.js"></script>
+   <script src="leafletheat/leaflet-heat.js"></script>
 <link href="estilo.css"
       rel="stylesheet" type="text/css">   
    <script language="javascript">
@@ -12,7 +13,7 @@
       function init() {
          map = new L.Map('map');
          L.tileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-            attribution: '&copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors',
+            attribution: '&copy; <a href="http://openstreetmap.org">Carlos Gil Terriente</a>',
             maxZoom: 18
          }).addTo(map);
          map.attributionControl.setPrefix(''); 
@@ -43,7 +44,7 @@
 </head>
 <body onLoad="javascript:init();">
    <div align="center" id="map"></div>
-   <input type="button" value="Te localizo" onClick="javascript:getLocationLeaflet();">
+   <input type="button" position="center" value="Te localizo" onClick="javascript:getLocationLeaflet();">
    
 </body>
 </html>

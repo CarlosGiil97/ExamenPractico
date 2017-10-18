@@ -1,0 +1,35 @@
+commit d4939604bb8a035c7b60ea8baa4def35b9bbc679
+Author: Carlos Gil <carlogilterriente@gmail.com>
+Date:   Wed Oct 18 09:19:57 2017 +0200
+
+    Estilo CSS del div separado y funciones javascript funcionando
+
+commit 3d26c380bb9d7de832fc6ea9029d217d2b1ecbd1
+Author: Carlos Gil <carlogilterriente@gmail.com>
+Date:   Wed Oct 18 09:08:38 2017 +0200
+
+    Funcion que nos muestra la localizacion y establezco un maxzoom de 15
+
+commit 1510f2a63bc4b597fca1bdb8962607a82bdc8c70
+Author: Carlos Gil <carlogilterriente@gmail.com>
+Date:   Wed Oct 18 09:07:33 2017 +0200
+
+    Funcion que muetra error en caso de fallo
+
+commit 9efae35253564a24c1aa66cb738e160372d2fd05
+Author: Carlos Gil <carlogilterriente@gmail.com>
+Date:   Wed Oct 18 09:06:42 2017 +0200
+
+    Añado la funcion que se encarga de encontrar mi localizacion
+
+commit 9656a71cc15ba5b4331b40254c75ea435e24ebf0
+Author: Carlos Gil <carlogilterriente@gmail.com>
+Date:   Wed Oct 18 09:05:13 2017 +0200
+
+    Creo la variable mapa y añado la funcion principal
+
+commit a8f29cb1515f3f187c02e8c747c9b7e588f7fe3c
+Author: Carlos Gil <carlogilterriente@gmail.com>
+Date:   Wed Oct 18 08:44:54 2017 +0200
+
+    Estructura basica HTML
