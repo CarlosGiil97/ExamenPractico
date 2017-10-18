@@ -25,6 +25,9 @@ var map;
       L.circle(location, radius).addTo(map);
       }
 
+      function onLocationError(e) {
+      alert(e.message);
+      }
 </script>
 </head>
 
